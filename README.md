@@ -1,8 +1,19 @@
 # Getting Started Exercises with JavaScript and Node.js
 
-Note: Try these short programs to get some firsthand experience with JavaScript and Node.js.
-You might want to create a new folder for each exercise to keep them organized. Create a single Github repository to commit the code for these exercises and once finished 
-submit the URL of the repo. 
+> Note: Try these short programs to get some firsthand experience with JavaScript and Node.js.
+
+> **How to run the file**
+first of all complete the Task 1 (Installations guides of Node.js & VSCode)[https://github.com/M-Naveed-Ashraf/JavaScript_Practice/tree/main/01_Installations_node_%26_vscode] and then open the terminal and type
+
+```
+node <pathToFile>
+```
+
+> such as to execute index.js file available in 02_Personal_Message. Run the following command in terminal
+
+```
+node 02_Personal_Message/index.js
+```
 
 1. Install [Node.js](https://nodejs.org/en/) and [VS Code](https://code.visualstudio.com/) on your computer.
 
