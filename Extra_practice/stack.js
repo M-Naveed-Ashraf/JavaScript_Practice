@@ -1,28 +1,3 @@
-// we have read that we can concatinate different strings using a method showing bellow
-
-firstName = "M Naveed";
-secondName = "Ashraf";
-
-sentence = "Hello " + firstName + " " + secondName + "! How are you?";
-
-console.log(sentence);
-
-
-// the new way and essiest way to doing the above work is showing bellow 
-
-sentence = `Hello ${firstName} ${secondName}! How are you?`;
-
-console.log(sentence);
-
-// equality comparisson
-// double equal also work but double equal goes true if (2+2="4") where 4 is String . it means double equal don't compare the type of both sides while triple equals does!
-
-if (2 + 2 === 4) {
-    console.log("comparisson done ...");
-}
-else 
- console.log("comparisson not work!");
-
 //  pseudo code for Stack
 
 // Start
@@ -34,16 +9,16 @@ let TOP = -1;
 let PUSH = function(value){
 
 //     if TOP pointer is less then maximum number N
-        if (TOP < max_size){
+      if (TOP < max_size){
 //          increment in pointer by 1
-            TOP +=1;
+          TOP +=1;
 //          add item at the position of pointer
-            stack[TOP] = value;
-        }
-      else
-         {
-           console.log('Stack is already full')
-         }
+          stack[TOP] = value;
+          console.log(`${value} added to the stack`)
+      }
+      else {
+        console.log('Stack is already full')
+      }
 }
 
 let POP = function() {
@@ -51,6 +26,7 @@ let POP = function() {
     let result = stack[TOP];
     delete stack[TOP];
     TOP -=1;
+    console.log(`${result} removed from the stack`)
   }
   else{
     console.log('Stack is empty');
@@ -58,7 +34,9 @@ let POP = function() {
 }
 
 PUSH(5);
-console.log(POP());
+PUSH(15);
+POP();
+
 
 
 // function POP()
