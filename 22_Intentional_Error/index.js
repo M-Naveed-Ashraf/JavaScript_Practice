@@ -1,4 +1,3 @@
-// by simply assigning the list enclosed in square brackets
 const languages = ['English', 'Urdu', 'Punjabi'];
 
 // I am expecting to add hindi after punjabi
