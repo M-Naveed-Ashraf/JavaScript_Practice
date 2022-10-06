@@ -8,9 +8,9 @@ The term b2-4ac is known as the discriminant of a quadratic equation. It tells t
 
 var root1, root2;
 
-var a = prompt('Enter the first number a');
-var b = prompt('Enter the second number b');
-var c = prompt('Enter the third number c');
+var a = 10;
+var b = 5;
+var c = 8;
 
 // a should not be equal to 0 so let's apply condition
 
