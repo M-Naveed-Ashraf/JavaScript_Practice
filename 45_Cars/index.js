@@ -4,11 +4,16 @@ function car(manufacturer, model_name, ...arg) {
         model_name
     }
     arg.forEach( elem => {
-        carObj[Object.keys(elem)[0]] = Object.values(elem)[0]
+        if(elem instanceof Object){
+            Object.keys(elem).forEach((el) => {
+                carObj[el] = elem[el]
+            })
+        }
+
     })
     return carObj;
 }
 
 console.log(car('honda', 'city'));
-console.log(car('honda', 'city', {color: 'black'}))
-console.log(car('honda', 'city', {color: 'black'}, {stroke: 4}))
+console.log(car('honda', 'city', {color: 'black', year: '2019'}))
+console.log(car('honda', 'city', {color: 'black'}, {stroke: 4}, 'new'))
